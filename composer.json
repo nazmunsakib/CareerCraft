@@ -1,0 +1,17 @@
+{
+    "name": "sakib/career-craft",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": {
+            "CareerCraft\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sakib",
+            "email": "nazmunsakib81@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
