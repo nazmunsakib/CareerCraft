@@ -1,9 +1,6 @@
-<?php include "parts/header.php"; 
-
-  
-//   use CareerCraft\Classes\User;
-//   $dd = new User();
-?>
+<?php 
+    include "parts/header.php"; 
+    ?>
 
     <!-- Banner Start -->
     <section class="cc-banner">
@@ -22,7 +19,7 @@
                 <div class="cc-login-card">
                     <div class="cc-login-card-inner">
                         <h4><?php echo "Login"; ?></h4>
-                        <form action="includes/user-action.php" method="POST">
+                        <form action="includes/user/user-action.php" method="POST">
                             <div class="form-group">
                                 <label for="username">User name</label>
                                 <input type="text" name="username" placeholder="User name">
@@ -39,7 +36,7 @@
                 <div class="cc-register-card">
                     <div class="cc-login-card-inner">
                         <h4><?php echo "Register"; ?></h4>
-                        <form action="includes/user-action.php" method="POST">
+                        <form action="includes/user/user-action.php" method="POST">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" name="name" placeholder="Full Name">

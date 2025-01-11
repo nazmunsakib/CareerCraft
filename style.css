@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --mm-sidebar-collapsed-size: 50px;
+    --mm-sidebar-expanded-size: 440px;
+}
+
+:root {
+    --mm-iconpanel-size: 50px;
+}
+:root {
+    --mm-iconbar-size: 50px;
+}
+:root {
+    --mm-line-height: 20px;
+    --mm-listitem-size: 44px;
+    --mm-navbar-size: 44px;
+    --mm-offset-top: 0;
+    --mm-offset-right: 0;
+    --mm-offset-bottom: 0;
+    --mm-offset-left: 0;
+    --mm-color-border: rgba(0, 0, 0, 0.1);
+    --mm-color-button: rgba(0, 0, 0, 0.3);
+    --mm-color-text: rgba(0, 0, 0, 0.75);
+    --mm-color-text-dimmed: rgba(0, 0, 0, 0.3);
+    --mm-color-background: #f3f3f3;
+    --mm-color-background-highlight: rgba(0, 0, 0, 0.05);
+    --mm-color-background-emphasis: rgba(255, 255, 255, 0.4);
+    --mm-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    color: #363636;
+    line-height: 28px;
+    font-weight: 400;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    font-weight: normal;
+    margin: 0px;
+    background: none;
+    line-height: 1.2em;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 14px 20px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #696969;
+    background: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #ECEDF2;
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+input:focus {
+    border-color: #1967D2;
+}
+
+.container{
+    position: static;
+    max-width: 1310px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+.cc-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cc-login-register-btn {
+    background-color: #E2EAF8;
+    color: #1967D2;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 18px 35px 15px 35px;
+    border-radius: 8px;
+}
+.cc-login-register-btn:hover {
+    background-color: #0146A6;
+     color: #fff;
+}
+a.cc-logo {
+    background: #1967D2;
+    color: #fff;
+    font-weight: 700;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.cc-main-header {
+    padding-top: 15px;  
+    padding-bottom: 15px;
+}
+.cc-banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0 40px;
+    background: #F5F7FC;
+}
+.cc-banner-content h1 {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #202124;
+    margin-bottom: 10px;
+}
+.cc-job-listing {
+    position: relative;
+    padding: 50px 0 100px;
+}
+.cc-job-board-area {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.cc-job-filter-area {
+    width: 33.33333333%;
+    flex: 0 0 auto;
+}
+.cc-job-list-area {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+/* Filter  */
+.cc-filters-outer {
+    position: relative;
+    background: #F5F7FC;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+}
+.cc-job-filter-area, .cc-job-list-area {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cc-filter-block h4 {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 16px;
+}
+.cc-job-listing .cc-sort-by select{
+    width: 150px;
+    padding: 8px 10px;
+}
+.cc-switcher {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.cc-job-listing .cc-filter-block .form-group {
+    position: relative;
+    margin-bottom: 0;
+}
+.cc-job-listing h4 {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 16px;
+}
+.checkboxes li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.checkboxes label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: #696969;
+}
+.checkboxes input[type="checkbox"] {
+    display: none;
+}
+.checkboxes label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-color: #fff;
+    border: 1px solid #ECEDF2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.25s;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 17px;
+}
+.checkboxes input[type="checkbox"]:checked + label:before {
+    /* content: "\f00c"; */
+    background-color: #1967D2;
+    border: 1px solid #1967D2;
+}
+.cc-filter-block {
+    margin-bottom: 20px;
+}
+
+
+
+/* Job Board */
+.cc-job-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+.cc-inner-box {
+    position: relative;
+    padding: 32px 20px 22px 30px;
+    background: #FFFFFF;
+    border: 1px solid #ECEDF2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+.cc-job-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.cc-job-info li {
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    color: #696969;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+.cc-job-other-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cc-job-other-info li {
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.cc-job-other-info li.time {
+    background: rgba(25, 103, 210, 0.15);
+    color: #1967D2;
+}
+.cc-job-other-info li.privacy {
+    background: rgba(52, 168, 83, 0.15);
+    color: #34A853;
+}
+.cc-job-other-info li.required {
+    background: rgba(249, 171, 0, 0.15);
+    color: #F9AB00;
+}
+.cc-content h4 {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 16px;
+}
+.cc-content h4 a {
+    color: #202124;
+    transition: all 300ms ease;
+}
+.cc-content h4 a:hover {
+    color: #1967D2;
+}
+.cc-job-block .cc-content {
+    position: relative;
+    padding-left: 68px;
+    min-height: 51px;
+}
+.cc-company-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    transition: all 300ms ease;
+}
+
+/* Login and register */
+.cc-login-register-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.cc-login-section {
+    padding: 80px 0;
+}
+.cc-login-register-card label {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 16px;
+}
+.cc-login-register-card .form-group {
+    margin-bottom: 10px;
+}
+.cc-login-register-card button {
+    background: #1967D2;
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 20px;
+    transition: all 300ms ease;
+    border: 1px solid #1967D2;
+}
+.cc-login-register-card button:hover {
+    background: none;
+    color: #1967D2;
+    background-color: #E2EAF8;
+}
+.cc-login-card, .cc-register-card {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cc-login-card-inner{
+    position: relative;
+    background: #F5F7FC;
+    border-radius: 8px;
+    padding: 50px 30px;
+}
+.cc-login-card-inner h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.cc-footer {
+    border-top: 1px solid #ECEDF2;
+    padding: 30px 0;
+}
