@@ -21,14 +21,14 @@
                         <h4><?php echo "Login"; ?></h4>
                         <form action="includes/user/user-action.php" method="POST">
                             <div class="form-group">
-                                <label for="username">User name</label>
+                                <label for="username"><?php echo "User name"; ?></label>
                                 <input type="text" name="username" placeholder="User name">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password"><?php echo "Password"; ?></label>
                                 <input type="password" name="password" placeholder="Password">
                             </div>
-                            <button id="login-button" name="login" type="submit">Login</button>
+                            <button id="login-button" name="login" type="submit"><?php echo "Login"; ?></button>
                         </form>
                     </div>
                 </div>
@@ -38,25 +38,25 @@
                         <h4><?php echo "Register"; ?></h4>
                         <form action="includes/user/user-action.php" method="POST">
                             <div class="form-group">
-                                <label for="name">Full Name</label>
+                                <label for="name"><?php echo "Full Name"; ?></label>
                                 <input type="text" name="name" placeholder="Full Name">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email"><?php echo "Email"; ?></label>
                                 <input type="email" name="email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password"><?php echo "Password"; ?></label>
                                 <input type="password" name="password" placeholder="Password">
                             </div>
                             <div class="form-cc-user-type">
-                                <label for="user_type">User Type</label>
+                                <label for="user_type"><?php echo "User Type"; ?></label>
                                 <select id="user_type" name="user_type">
-                                    <option value="employer">I am an Employer</option>
-                                    <option value="job-seeker">I am a Job Seeker</option>
+                                    <option value="employer"><?php echo "I am an Employer"; ?></option>
+                                    <option value="job-seeker"><?php echo "I am a Job Seeker"; ?></option>
                                 </select>
                             </div>
-                            <button id="login-button" name="register" type="submit">Register</button>
+                            <button id="login-button" name="register" type="submit"><?php echo "Register"; ?></button>
                         </form>
                     </div>
                 </div>

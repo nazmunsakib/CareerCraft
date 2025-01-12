@@ -24,9 +24,9 @@ class User{
         ]);
 
         if( $statement->rowCount() > 0 ){
-            Helper::redirect('../../index.php?register=true');
+            Helper::redirect('../../login.php?register=true');
         }else{
-            Helper::redirect('../../index.php?register=false');
+            Helper::redirect('../../login.php?register=false');
         }
         
         return true;
@@ -50,7 +50,9 @@ class User{
             $_SESSION['user_type']      = $user['user_type'];
             $_SESSION['is_logged_in']   = true;
 
-            Helper::redirect('../index.php');
+            Helper::redirect('../../index.php');
+        }else{
+            Helper::redirect('../../login.php?login=false');
         }
     }
 }

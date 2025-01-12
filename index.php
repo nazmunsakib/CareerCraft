@@ -1,6 +1,5 @@
 <?php 
   include "parts/header.php"; 
-  require_once __DIR__ . '/vendor/autoload.php';
   ?>
 
   <!-- Banner Start -->

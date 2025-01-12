@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Autoload file include-->
+    <?php 
+        require_once __DIR__ . '/../vendor/autoload.php';
+        use CareerCraft\Classes\Helper;
+    ?>
+
     <main id="js-primary">
         <!-- Header Start -->
         <header class="cc-main-header">
@@ -17,7 +23,11 @@
                         <a href="index.php" class="cc-logo">Cc</a>
                     </div>
                     <div class="cc-header-right">
-                        <a href="login.php" class="cc-login-register-btn">Login / Register</a>
+                        <?php if( !Helper::isLoggedIn() ) : ?>
+                            <a href="login.php" class="cc-login-register-btn"><?php echo 'Login / Register'; ?></a>
+                        <?php else : ?>
+                            <a href="logout.php" class="cc-login-register-btn"><?php echo 'Logout'; ?></a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

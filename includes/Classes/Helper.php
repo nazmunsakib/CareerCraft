@@ -35,4 +35,8 @@ class Helper{
     public static function redirect( $location ){
         header("Location: " . $location);
     } 
+
+    public static function isLoggedIn(){
+        return $_SESSION['is_logged_in'] ?? false;
+    } 
 }

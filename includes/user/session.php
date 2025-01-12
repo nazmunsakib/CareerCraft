@@ -7,6 +7,7 @@
         'httponly'  => true, // Prevent JavaScript access
         'samesite'  => 'Strict', // Prevent cross-site request forgery
     ]);
+    
     session_start();
 
     // Regenerate session ID for security

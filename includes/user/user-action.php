@@ -14,8 +14,6 @@ if( isset( $_POST['register'] ) ){
     $user_type  =  $_POST['user_type'] ?? '';
 
     $register   = $user->register($name, $email, $password, $user_type);
-
-    var_dump(  $register );
 }
 
 /**
