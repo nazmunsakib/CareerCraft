@@ -12,8 +12,7 @@ if( isset( $_POST['register'] ) ){
     $email      =  $_POST['email'] ?? '';
     $password   =  $_POST['password'] ?? '';
     $user_type  =  $_POST['user_type'] ?? '';
-
-    $register   = $user->register($name, $email, $password, $user_type);
+    $user->register($name, $email, $password, $user_type);
 }
 
 /**

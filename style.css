@@ -253,8 +253,6 @@ a.cc-logo {
     margin-bottom: 20px;
 }
 
-
-
 /* Job Board */
 .cc-job-block {
     position: relative;
@@ -346,7 +344,7 @@ a.cc-logo {
     margin-right: -15px;
 }
 .cc-login-section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 .cc-login-register-card label {
     position: relative;
@@ -397,7 +395,13 @@ a.cc-logo {
     margin-bottom: 20px;
     padding-bottom: 6px;
 }
-
+.cc-login-notice-wrap {
+    padding: 15px 30px;
+    background: #E2EAF8;
+    margin-top: 50px;
+    border-radius: 8px;
+    color: #1967D2;
+}
 
 
 

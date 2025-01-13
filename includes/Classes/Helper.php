@@ -39,4 +39,41 @@ class Helper{
     public static function isLoggedIn(){
         return $_SESSION['is_logged_in'] ?? false;
     } 
+
+    public static function getMassage($type = ''){
+        return $_GET[$type] ?? false;
+    }
+
+    public static function getUserMeta($type = ''){
+        return $_SESSION[$type] ?? '';
+    }
+
+    public static  function sanitizeInput($data, $type = 'string') {
+        switch ($type) {
+            case 'email':
+                $data = filter_var($data, FILTER_SANITIZE_EMAIL);
+                if (!filter_var($data, FILTER_VALIDATE_EMAIL)) {
+                    return false;
+                }
+                break;
+            case 'string':
+                $data = filter_var($data, FILTER_SANITIZE_STRING);
+                break;
+            case 'password':
+                if (strlen($data) < 6) {
+                    return false;
+                }
+                break;
+            case 'user_type':
+                $data = filter_var($data, FILTER_SANITIZE_STRING);
+                $allowed_types = ['employer', 'job-seeker'];
+                if (!in_array($data, $allowed_types)) {
+                    return false;
+                }
+                break;
+        }
+        return $data;
+    }
+
+    
 }
